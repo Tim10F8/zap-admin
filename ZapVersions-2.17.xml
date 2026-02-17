@@ -2351,29 +2351,19 @@ but if you encounter problems, please refer to the following.
         <name>Passive scanner rules (beta)</name>
         <description>The beta status Passive Scanner rules</description>
         <author>ZAP Dev Team</author>
-        <version>48</version>
-        <file>pscanrulesBeta-beta-48.zap</file>
+        <version>49</version>
+        <file>pscanrulesBeta-beta-49.zap</file>
         <status>beta</status>
         <changes>&lt;h3&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update minimum ZAP version to 2.17.0.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Removed&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The following scan rules were removed, having been promoted to Beta:
-&lt;ul&gt;
-&lt;li&gt;In Page Banner Information Leak&lt;/li&gt;
-&lt;li&gt;Java Serialization Object&lt;/li&gt;
-&lt;li&gt;Sub Resource Integrity Attribute Missing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Insufficient Site Isolation Against Spectre Vulnerability alerts to have unique alert names.&lt;/li&gt;
 &lt;/ul&gt;</changes>
-        <url>https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v48/pscanrulesBeta-beta-48.zap</url>
-        <hash>SHA-256:3278eadcf58951300d02837c11f9e816cf150e245bd83145152db7922100f2fa</hash>
+        <url>https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v49/pscanrulesBeta-beta-49.zap</url>
+        <hash>SHA-256:b16f25eb3ad4495148a8207dc93f0ae6e5235c67d73791d9e2aa38dabf1fe0ec</hash>
         <info>https://www.zaproxy.org/docs/desktop/addons/passive-scan-rules-beta/</info>
         <repo>https://github.com/zaproxy/zap-extensions/</repo>
-        <date>2025-12-15</date>
-        <size>666292</size>
+        <date>2026-02-17</date>
+        <size>595813</size>
         <not-before-version>2.17.0</not-before-version>
         <dependencies>
             <addons>
