@@ -2611,26 +2611,30 @@ but if you encounter problems, please refer to the following.
         <name>Retire.js</name>
         <description>Use Retire.js to identify vulnerable or out-dated JavaScript packages.</description>
         <author>Nikita Mundhada and the ZAP Dev Team</author>
-        <version>0.53.0</version>
-        <file>retire-release-0.53.0.zap</file>
+        <version>0.54.0</version>
+        <file>retire-release-0.54.0.zap</file>
         <status>release</status>
         <changes>&lt;h3&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Updated with upstream retire.js pattern changes.&lt;/li&gt;
-&lt;li&gt;Update minimum ZAP version to 2.17.0.&lt;/li&gt;
+&lt;li&gt;Now only loads the data once (Issue 9103).&lt;/li&gt;
 &lt;/ul&gt;</changes>
-        <url>https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.53.0/retire-release-0.53.0.zap</url>
-        <hash>SHA-256:ae6fe4f275de36cba4fddd2e6cc80c76b541f264cd5d69bc96f009c4b28a3f85</hash>
+        <url>https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.54.0/retire-release-0.54.0.zap</url>
+        <hash>SHA-256:2ecbc00c18e3421afe5c0ff0564ba52ffee372e6d8b9911f39fe25f9e8bbc007</hash>
         <info>https://www.zaproxy.org/docs/desktop/addons/retire.js/</info>
         <repo>https://github.com/zaproxy/zap-extensions/</repo>
-        <date>2026-01-08</date>
-        <size>1012480</size>
+        <date>2026-02-24</date>
+        <size>1015575</size>
         <not-before-version>2.17.0</not-before-version>
         <dependencies>
             <addons>
                 <addon>
                     <id>commonlib</id>
                     <version>&gt;= 1.32.0 &amp; &lt; 2.0.0</version>
+                </addon>
+                <addon>
+                    <id>pscan</id>
+                    <version>&gt;= 0.1.0 &amp; &lt; 1.0.0</version>
                 </addon>
             </addons>
         </dependencies>
@@ -2768,20 +2772,28 @@ but if you encounter problems, please refer to the following.
         <name>Selenium</name>
         <description>WebDriver provider and includes HtmlUnit browser</description>
         <author>ZAP Dev Team</author>
-        <version>15.43.0</version>
-        <file>selenium-release-15.43.0.zap</file>
+        <version>15.44.0</version>
+        <file>selenium-release-15.44.0.zap</file>
         <status>release</status>
-        <changes>&lt;h3&gt;Changed&lt;/h3&gt;
+        <changes>&lt;h3&gt;Added&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update minimum ZAP version to 2.17.0.&lt;/li&gt;
-&lt;li&gt;Update Selenium to version 4.39.0.&lt;/li&gt;
+&lt;li&gt;Support for custom browsers&lt;/li&gt;
+&lt;li&gt;Support for browser preferences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Selenium to version 4.41.0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Removed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for IE and disabled Safari.&lt;/li&gt;
 &lt;/ul&gt;</changes>
-        <url>https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.43.0/selenium-release-15.43.0.zap</url>
-        <hash>SHA-256:2f7fbf1b17813b6578057d590300ebc948d9a7d63483c95e7db0ba5a48d1ff74</hash>
+        <url>https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.44.0/selenium-release-15.44.0.zap</url>
+        <hash>SHA-256:6cb22751bae5ecbe2206d7ccd816bfafc233806b206f1101f1227c919f91ecb3</hash>
         <info>https://www.zaproxy.org/docs/desktop/addons/selenium/</info>
         <repo>https://github.com/zaproxy/zap-extensions/</repo>
-        <date>2025-12-15</date>
-        <size>34920099</size>
+        <date>2026-02-24</date>
+        <size>34911806</size>
         <not-before-version>2.17.0</not-before-version>
         <dependencies>
             <addons>
@@ -2867,23 +2879,24 @@ but if you encounter problems, please refer to the following.
         <name>Spider</name>
         <description>Spider used for automatically finding URIs on a site.</description>
         <author>ZAP Dev Team</author>
-        <version>0.18.0</version>
-        <file>spider-release-0.18.0.zap</file>
+        <version>0.19.0</version>
+        <file>spider-release-0.19.0.zap</file>
         <status>release</status>
         <changes>&lt;h3&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Update minimum ZAP version to 2.17.0.&lt;/li&gt;
+&lt;li&gt;Maintenance changes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Removed&lt;/h3&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Dropped help references to ZAP in Ten videos which are no longer available.&lt;/li&gt;
+&lt;li&gt;Handle persistence errors and forced shutdown in automation job.&lt;/li&gt;
+&lt;li&gt;Address memory leak.&lt;/li&gt;
 &lt;/ul&gt;</changes>
-        <url>https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.18.0/spider-release-0.18.0.zap</url>
-        <hash>SHA-256:04259df95f9fc133e88876df740230fb9502a26fbffa1fcd9fa307ebd1e15cf7</hash>
+        <url>https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.19.0/spider-release-0.19.0.zap</url>
+        <hash>SHA-256:ffe4e456c0c3cc58a48dc1458364cb0dc9619a2e668157782a7e4fb67854de21</hash>
         <info>https://www.zaproxy.org/docs/desktop/addons/spider/</info>
         <repo>https://github.com/zaproxy/zap-extensions/</repo>
-        <date>2025-12-15</date>
-        <size>1206016</size>
+        <date>2026-02-24</date>
+        <size>1200181</size>
         <not-before-version>2.17.0</not-before-version>
         <dependencies>
             <addons>
@@ -3140,20 +3153,20 @@ but if you encounter problems, please refer to the following.
         <name>Technology Detection</name>
         <description>Technology detection using various fingerprints and identifiers.</description>
         <author>ZAP Dev Team</author>
-        <version>21.52.0</version>
-        <file>wappalyzer-release-21.52.0.zap</file>
+        <version>21.53.0</version>
+        <file>wappalyzer-release-21.53.0.zap</file>
         <status>release</status>
         <changes>&lt;h3&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Updated with enthec upstream icon and pattern changes.&lt;/li&gt;
-&lt;li&gt;Adjust warnings logged when a pattern incorrectly contains Confidence or Version tags, use just one punctuation character.&lt;/li&gt;
+&lt;li&gt;Dependency update.&lt;/li&gt;
 &lt;/ul&gt;</changes>
-        <url>https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.52.0/wappalyzer-release-21.52.0.zap</url>
-        <hash>SHA-256:89032a1848b4f34a84977f832b102094c517e055acd6c289505f996fa1a276e2</hash>
+        <url>https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.53.0/wappalyzer-release-21.53.0.zap</url>
+        <hash>SHA-256:cb486f1c1636e24f6e0c5b432c253170eb56bcf9c6ed0a8be218666040aba946</hash>
         <info>https://www.zaproxy.org/docs/desktop/addons/technology-detection/</info>
         <repo>https://github.com/zaproxy/zap-extensions/</repo>
-        <date>2025-12-18</date>
-        <size>29268890</size>
+        <date>2026-02-24</date>
+        <size>31131797</size>
         <not-before-version>2.17.0</not-before-version>
         <dependencies>
             <addons>
